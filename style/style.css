@@ -1,13 +1,18 @@
+div, ul, li  {
+    border: 1px solid red;
+}
 @font-face{
     font-family: 'PT Sans Narrow';
     src: url('/fonts/ptsansnarrow.woff');
     }
 body {
-    background: url(/images/background_image.png) fixed;
+    background: url(../images/background_image.png) fixed;
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
+    font-family: 'PT Sans Narrow';
+
 }
   
 
@@ -37,11 +42,20 @@ a {
     
 .header {
     display: flex;
-    background: black;
+    font-size: 30px;
+    font-weight: bold;
     color: white;
     height: 70px;
     font-size: 16px;
+    max-width: 960px;
+    min-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    text-transform: uppercase;
  
+}
+header {
+    background: black;
 }
 
 .nav {
@@ -115,7 +129,7 @@ a {
 .news_gallery {
     height: 450px;
     display: flex;
-    background: url(/images/news_gallery_texture.png);
+    background: url(../images/news_gallery_texture.png);
     color: black;
     margin-top: 85px;
     
@@ -176,20 +190,21 @@ a {
 .contacts_order {
     height: 500px;
     display: flex;
-    background: url(/images/news_gallery_texture.png);
+    background: url(../images/news_gallery_texture.png);
     color: black;
     margin-top: 36px;
+    width: 100%;
 }
 .contacts_block {
     width: 50%;
 }
 
+.order_block {
+    width: 50%;
+}
 .contacts_block_items {
     width: 80%;
     margin: auto;
-}
-.order_block {
-    width: 50%;
 }
 
 .contacts_block_adress {
@@ -229,13 +244,25 @@ a {
     font-weight: bold;
 }
 .footer {
-    margin-top: 70px;
+    
+    padding: 0px;
     display: flex;
-    height: 180px;
     background: #222222;
     justify-content: space-between;
-
-
+    max-width: 960px;
+    min-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+}
+footer {
+    margin-top: 70px;
+    width: 100%;
+    background: #222222;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding-top: 0px;
+    height: 180px;
 }
 
 .img_gallery {
@@ -245,21 +272,29 @@ a {
 
 .footer_address, .footer_subscibes, .footer_dev {
     width: 25%;
-    margin-top: 20px;
+    margin-top: 10px;
    
 }
 .footer_address{
     padding-left: 10px;
+    
 
 }
 .footer_subscibes, .footer_dev {
     text-align: center;
+   
 }
 .social_media_logo {
     padding: 5px;
 }
 .gallery_button_footer {
     border: 1px solid black;
+    width: 140px;
+    height: 40px;
+    background: black;
+    color: white;
+    font-weight: bold;
+ 
 }
 
 
